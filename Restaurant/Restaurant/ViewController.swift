@@ -38,6 +38,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
         }
     
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.textLabel?.textColor = .black //글자색
+            headerView.textLabel?.textAlignment = .left //글자 정렬
+            headerView.textLabel?.font = UIFont(name: "Copperplate-Bold", size: 18) //폰트와 폰트 크기 설정
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return food.count
+        
+        }
+    
     @IBOutlet weak var tableView: UITableView!
     let cellIdentifier: String = "cell"
     
@@ -50,11 +63,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ["노랑통닭", "맘스터치", "bhc"]
     ]
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextViewController: FoodListViewController = segue.destination as? FoodListViewController else { return }
+        guard let cell: UITableViewCell = sender as? UITableViewCell else { return }
+        
+        nextViewController.textToFoodList = cell.textLabel?.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.contentInset = UIEdgeInsets(top: 15, left: 0, bottom: 0, right: 0)
+        self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return food.count
-        }
 }

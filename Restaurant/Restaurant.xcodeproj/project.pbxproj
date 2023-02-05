@@ -13,6 +13,8 @@
 		FE56B651298C275C000AD910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE56B64F298C275C000AD910 /* Main.storyboard */; };
 		FE56B653298C275D000AD910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE56B652298C275D000AD910 /* Assets.xcassets */; };
 		FE56B656298C275D000AD910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE56B654298C275D000AD910 /* LaunchScreen.storyboard */; };
+		FE56B65F298FBED3000AD910 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56B65E298FBED3000AD910 /* FoodListViewController.swift */; };
+		FE56B66729901ACC000AD910 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56B66629901ACC000AD910 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FE56B652298C275D000AD910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE56B655298C275D000AD910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE56B657298C275D000AD910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE56B65E298FBED3000AD910 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
+		FE56B66629901ACC000AD910 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				FE56B649298C275C000AD910 /* AppDelegate.swift */,
 				FE56B64B298C275C000AD910 /* SceneDelegate.swift */,
 				FE56B64D298C275C000AD910 /* ViewController.swift */,
+				FE56B65E298FBED3000AD910 /* FoodListViewController.swift */,
 				FE56B64F298C275C000AD910 /* Main.storyboard */,
+				FE56B66629901ACC000AD910 /* CustomCell.swift */,
 				FE56B652298C275D000AD910 /* Assets.xcassets */,
 				FE56B654298C275D000AD910 /* LaunchScreen.storyboard */,
 				FE56B657298C275D000AD910 /* Info.plist */,
@@ -140,6 +146,8 @@
 			files = (
 				FE56B64E298C275C000AD910 /* ViewController.swift in Sources */,
 				FE56B64A298C275C000AD910 /* AppDelegate.swift in Sources */,
+				FE56B66729901ACC000AD910 /* CustomCell.swift in Sources */,
+				FE56B65F298FBED3000AD910 /* FoodListViewController.swift in Sources */,
 				FE56B64C298C275C000AD910 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
